@@ -1,4 +1,3 @@
-const Gulp = require('gulp');
 const Util = require('gulp-util');
 const Umzug = require('umzug');
 const Sequelize = require('sequelize');
@@ -15,7 +14,7 @@ var options = {
 };
 
 
-module.exports = (sequelize_instance, new_options) => {
+module.exports = (Gulp, sequelize_instance, new_options) => {
     options = Object.assign({}, options, new_options);
     
     var umzug = new Umzug({
