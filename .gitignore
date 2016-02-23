@@ -1,0 +1,14 @@
+# OS Junk
+.DS_Store
+
+# App Junk
+node_modules
+npm-debug.log
+lib
+
+# Test junk
+test/migrations/*
+!test/migrations/1451796876301-print-a-log.js
+!test/migrations/1451796876302-do-nothing.js
+test/models/*
+!test/models/sequelize.js
